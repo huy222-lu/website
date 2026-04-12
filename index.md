@@ -11,7 +11,7 @@ I am a fourth-year Ph.D. student at Rutgers University, under the supervision of
 My research is concentrated in the areas of **Human-Centric Cyber-Physical Systems** and **Spatial-Temporal Data Science**.
 I focus on exploring various techniques, e.g., Large Language Models (LLMs), Robust Machine Learning, and Interpretable Large-scale System Optimization, for predictive analytics and decision-making problems in smart cities.
 My work is informed by real-world demands and the systems I developed have been deployed **nationwide** to improve urban life and promote environmental sustainability.
-My publications can also be found at [Google Scholar](https://scholar.google.com/citations?user=_LMyrNQAAAAJ&hl=en).
+My publications can also be found at [Google Scholar](https://scholar.google.com/citations?user=K-OCWVMAAAAJ&hl=en).
 
 </div>
 
