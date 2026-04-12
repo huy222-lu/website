@@ -16,7 +16,7 @@ My publications can also be found at [Google Scholar](https://scholar.google.com
 
 <div class="section-experience" markdown="1">
 
-### Research Experiences
+### Internship Experiences
 
 > **Research Intern in JD Logistics &nbsp;&nbsp;&nbsp; Summer 2022, Summer 2023**
 > * Led the logistics audience expansion project and deployed the framework in production on the JD e-commerce platform
