@@ -18,7 +18,7 @@
   --primary: rgb(30, 30, 30);
   --secondary: rgb(108, 108, 108);
   --tertiary: rgb(214, 214, 214);
-  --darkcolor: #6a7ba2;
+  --darkcolor: #0076df;
   --lightcolor: #cbd1de;
   --nav-bg: rgb(245, 245, 245);
   --border: rgb(238, 238, 238);
@@ -297,7 +297,7 @@ html { scroll-behavior: smooth; }
 .pub-badge {
   flex-shrink: 0;
   width: 90px;
-  background: var(--darkcolor);
+  background: #0076df;
   color: #fff;
   font-weight: 700;
   font-size: 0.75em;
