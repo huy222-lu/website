@@ -35,23 +35,14 @@ overhead for on-demand delivery during rush hours
 
 ### News
 
-* **[2025/05]** &nbsp; A co-authored paper accepted by ACL (Industry Track) 2025.
-* **[2025/04]** &nbsp; A co-authored paper accepted by IEEE/ACM IWQOS 2025.
+* **[2026/01]** &nbsp; A co-authored paper accepted by ICRA 2026.
+* **[2025/11]** &nbsp; A co-authored paper accepted by IEEE/ACM IWQOS 2025.
 * **[2025/02]** &nbsp; A co-authored paper accepted by IEEE TMC.
 * **[2025/01]** &nbsp; A 1st-authored paper accepted by WWW 2025.
 * **[2024/12]** &nbsp; A co-authored paper accepted by AAAI 2025.
 * **[2024/11]** &nbsp; A co-authored paper accepted by KDD 2025.
 * **[2024/09]** &nbsp; A 1st-authored paper accepted by IEEE TMC.
 * **[2024/08]** &nbsp; A co-authored paper accepted by SIGSPATIAL 2024.
-* **[2024/07]** &nbsp; Three co-authored papers accepted by CIKM 2024.
-* **[2024/05]** &nbsp; A co-authored paper accepted by IEEE TKDE and a co-authored paper accepted by IEEE TMC.
-* **[2024/04]** &nbsp; A co-authored paper accepted by IEEE/ACM IWQOS 2024.
-* **[2024/02]** &nbsp; A co-authored paper accepted by IEEE Transactions on Cloud Computing.
-* **[2023/10]** &nbsp; A co-authored paper accepted by ICA3PP 2023, awarded **Best Student Paper**.
-* **[2023/08]** &nbsp; Two co-authored papers accepted by CIKM 2023.
-* **[2023/04]** &nbsp; A 1st-authored paper accepted by IJCAI 2023.
-* **[2023/02]** &nbsp; A 1st-authored paper accepted by ICDE 2023.
-* **[2022/08]** &nbsp; Two co-authored papers accepted by ACM SIGSPATIAL 2022.
-* **[2021/10]** &nbsp; A 1st-authored paper accepted by IMWUT/Ubicomp.
+
 
 </div>
