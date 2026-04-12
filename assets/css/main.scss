@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
   background-color: #f5f8fc;
   color: #2c2c2c;
 }
@@ -28,25 +29,25 @@ h1, h2, h3, h4, h5, h6,
    ============================================================ */
 
 .masthead {
-  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
-  border-bottom: none;
-  box-shadow: 0 2px 10px rgba(21, 101, 192, 0.3);
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 
   &__inner-wrap {
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
   }
 }
 
 .site-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 1.2em;
-  color: #ffffff !important;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-size: 1em;
+  color: #333333 !important;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  &:hover { color: #bbdefb !important; }
+  &:hover { color: #1565c0 !important; }
 }
 
 .greedy-nav {
@@ -54,21 +55,21 @@ h1, h2, h3, h4, h5, h6,
 
   a {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.88);
-    letter-spacing: 0.03em;
+    color: #444444;
+    letter-spacing: 0.02em;
 
-    &:hover { color: #ffffff; }
+    &:hover { color: #1565c0; }
   }
 
   .visible-links a::before {
-    background: #ffffff;
+    background: #1565c0;
   }
 
   button {
-    color: #ffffff;
-    &:hover { color: #bbdefb; }
+    color: #555;
+    &:hover { color: #1565c0; }
   }
 }
 
@@ -114,8 +115,8 @@ h1, h2, h3, h4, h5, h6,
 
 .author__name {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 1.15em !important;
+  font-weight: 700;
+  font-size: 1em !important;
   color: #1a237e !important;
   margin-bottom: 0.3em;
 
@@ -124,7 +125,7 @@ h1, h2, h3, h4, h5, h6,
 
 .author__bio {
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.82em !important;
+  font-size: 0.8em !important;
   color: #546e7a !important;
   line-height: 1.5;
 }
@@ -174,8 +175,8 @@ h1, h2, h3, h4, h5, h6,
 
 .page__content {
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 1em;
-  line-height: 1.8;
+  font-size: 0.9em;
+  line-height: 1.75;
   color: #2c2c2c;
 
   a {
@@ -187,11 +188,11 @@ h1, h2, h3, h4, h5, h6,
   h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #1a237e;
-    margin-top: 2em;
-    margin-bottom: 0.8em;
-    padding-bottom: 0.35em;
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
+    padding-bottom: 0.3em;
     border-bottom: 2px solid #e3edf7;
 
     /* remove inline span colors from old markdown */
