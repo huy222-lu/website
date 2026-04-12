@@ -36,13 +36,11 @@ overhead for on-demand delivery during rush hours
 ### News
 
 * **[2026/01]** &nbsp; A co-authored paper accepted by ICRA 2026.
-* **[2025/11]** &nbsp; A co-authored paper accepted by IEEE/ACM IWQOS 2025.
-* **[2025/02]** &nbsp; A co-authored paper accepted by IEEE TMC.
-* **[2025/01]** &nbsp; A 1st-authored paper accepted by WWW 2025.
-* **[2024/12]** &nbsp; A co-authored paper accepted by AAAI 2025.
-* **[2024/11]** &nbsp; A co-authored paper accepted by KDD 2025.
-* **[2024/09]** &nbsp; A 1st-authored paper accepted by IEEE TMC.
-* **[2024/08]** &nbsp; A co-authored paper accepted by SIGSPATIAL 2024.
+* **[2025/11]** &nbsp; A co-authored paper accepted by BuildSys 2025.
+* **[2025/01]** &nbsp; Two co-authored paper accepted by SIGSPATIAL 2025.
+* **[2025/10]** &nbsp; A 1st-authored paper accepted by IMWUT 2025.
+* **[2024/12]** &nbsp; A 1st-authored paper accepted by WWW 2024.
+
 
 
 </div>
