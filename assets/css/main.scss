@@ -8,24 +8,28 @@
 @import "minimal-mistakes";
 
 /* ============================================================
-   Custom overrides — cleaner, more modern look
+   Global typography
    ============================================================ */
 
-/* Background: pure white instead of gray */
 body {
+  font-family: 'Inter', sans-serif;
   background-color: #ffffff;
+  color: #2d2d2d;
 }
 
-.page__content,
-#main {
-  background-color: #ffffff;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 0.01em;
 }
 
-/* Masthead (top nav bar) */
+/* ============================================================
+   Masthead (top nav)
+   ============================================================ */
+
 .masthead {
   background-color: #ffffff;
-  border-bottom: 1px solid #e8e8e8;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #e4eaf0;
+  box-shadow: 0 1px 6px rgba(0, 100, 180, 0.07);
 
   &__inner-wrap {
     padding-top: 0.6em;
@@ -33,111 +37,289 @@ body {
   }
 }
 
-/* Site title in nav */
 .site-title {
-  font-weight: 700;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3em;
+  color: #1565c0 !important;
   letter-spacing: 0.02em;
 }
 
-/* Sidebar author profile */
+.greedy-nav a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88em;
+  font-weight: 500;
+  color: #444;
+
+  &:hover { color: #1565c0; }
+}
+
+/* ============================================================
+   Sidebar
+   ============================================================ */
+
 .sidebar {
   .author__name {
-    font-size: 1.2em;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 0.2em;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3em;
+    color: #1a1a2e;
+    margin-bottom: 0.25em;
   }
 
   .author__bio {
-    font-size: 0.85em;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82em;
     color: #555;
-    line-height: 1.5;
+    line-height: 1.6;
   }
 
   .author__avatar img {
     border-radius: 50%;
-    border: 3px solid #e0e0e0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #bbdefb;
+    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.15);
   }
 
-  .author__urls {
-    a {
-      color: #0077b6;
-      font-size: 0.85em;
-      &:hover {
-        color: #023e8a;
-        text-decoration: underline;
-      }
-    }
+  .author__urls a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.83em;
+    color: #1565c0;
+    &:hover { color: #0d47a1; text-decoration: underline; }
   }
 }
 
-/* Page content typography */
+/* ============================================================
+   Page content — shared
+   ============================================================ */
+
 .page__content {
-  font-size: 0.95em;
-  line-height: 1.75;
+  font-size: 0.94em;
+  line-height: 1.8;
   color: #333;
 
-  h3 {
-    margin-top: 1.8em;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.3em;
-    border-bottom: 2px solid #e8e8e8;
-    font-size: 1.1em;
+  a {
+    color: #1565c0;
+    &:hover { color: #0d47a1; text-decoration: underline; }
+  }
+}
+
+/* ============================================================
+   Section headers (h3) — each gets its own look
+   ============================================================ */
+
+/* Default h3 style */
+.page__content h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25em;
+  color: #1a1a2e;
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid #e3edf7;
+  /* remove any inline color from span children */
+  span { color: inherit !important; font-weight: inherit !important; }
+}
+
+/* Biography — blue pill label */
+.section-bio h3::before {
+  content: "About";
+  display: inline-block;
+  background: #1565c0;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15em 0.7em;
+  border-radius: 20px;
+  margin-right: 0.7em;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+/* Research Experiences — green accent */
+.section-experience h3 {
+  border-bottom-color: #a5d6a7;
+  span { color: #2e7d32 !important; }
+}
+
+.section-experience h3::before {
+  content: "Exp";
+  display: inline-block;
+  background: #2e7d32;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15em 0.7em;
+  border-radius: 20px;
+  margin-right: 0.7em;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+/* Recent News — orange/amber accent */
+.section-news h3 {
+  border-bottom-color: #ffcc80;
+  span { color: #e65100 !important; }
+}
+
+.section-news h3::before {
+  content: "News";
+  display: inline-block;
+  background: #e65100;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15em 0.7em;
+  border-radius: 20px;
+  margin-right: 0.7em;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+/* ============================================================
+   Biography block
+   ============================================================ */
+
+.section-bio {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  border: 1px solid #ddeeff;
+  border-radius: 10px;
+  padding: 1.4em 1.6em;
+  margin-bottom: 1.8em;
+}
+
+/* ============================================================
+   Research Experience cards (blockquotes)
+   ============================================================ */
+
+.section-experience blockquote {
+  background: #f9fffe;
+  border: 1px solid #c8e6c9;
+  border-left: 5px solid #43a047;
+  border-radius: 0 8px 8px 0;
+  padding: 0.9em 1.2em;
+  margin: 0.8em 0 1.2em 0;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.07);
+  font-style: normal;
+
+  p {
+    margin: 0 0 0.4em 0;
+    font-weight: 600;
+    color: #1b5e20;
+    font-size: 0.95em;
   }
 
-  /* Recent News list */
-  ul li {
-    margin-bottom: 0.4em;
-    font-size: 0.9em;
-    color: #444;
-  }
-
-  /* Blockquote used for experience entries */
-  blockquote {
-    background: #f8f9fa;
-    border-left: 4px solid #0092ca;
-    border-radius: 0 6px 6px 0;
-    padding: 0.8em 1.2em;
-    margin: 0.8em 0;
-    color: #333;
-    font-style: normal;
-
-    p { margin: 0; }
-
-    ul {
-      margin: 0.4em 0 0 0;
-      padding-left: 1.2em;
+  ul {
+    margin: 0.3em 0 0 0;
+    padding-left: 1.3em;
+    li {
+      font-size: 0.88em;
+      color: #37474f;
+      margin-bottom: 0.25em;
+      list-style-type: disc;
     }
   }
 }
 
-/* Publications page */
-.page__content strong {
-  color: #0077b6;
+/* ============================================================
+   Recent News — timeline style
+   ============================================================ */
+
+.section-news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid #bbdefb;
+  padding-left: 1.4em;
+
+  li {
+    position: relative;
+    padding: 0.45em 0.5em 0.45em 0.6em;
+    margin-bottom: 0.5em;
+    font-size: 0.88em;
+    color: #37474f;
+    background: #fafcff;
+    border-radius: 0 6px 6px 0;
+    transition: background 0.2s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1.55em;
+      top: 0.85em;
+      width: 9px;
+      height: 9px;
+      background: #1565c0;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #90caf9;
+    }
+
+    &:hover {
+      background: #e8f1fd;
+    }
+
+    /* Bold the date part (e.g. "May. 2025:") */
+    strong { color: #1565c0; }
+  }
 }
 
-/* Footer */
+/* ============================================================
+   Publications page
+   ============================================================ */
+
+.page__content h3 {
+  /* year headings on publications page */
+}
+
+/* Year labels */
+.page__content > h3:not(.section-bio h3):not(.section-experience h3):not(.section-news h3) {
+  font-size: 1.4em;
+  color: #1565c0;
+}
+
+/* Venue badge e.g. [ICRA'26] */
+.page__content strong {
+  display: inline-block;
+  background: #e3f0ff;
+  color: #1565c0;
+  font-size: 0.82em;
+  font-weight: 600;
+  padding: 0.1em 0.55em;
+  border-radius: 4px;
+  border: 1px solid #b3d4f7;
+  margin-right: 0.3em;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
 .page__footer {
-  background-color: #0092ca;
+  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
   color: #fff;
+  font-family: 'Inter', sans-serif;
   font-size: 0.8em;
 
-  a {
-    color: #fff;
-    &:hover { color: #e0f4ff; }
-  }
+  a { color: #bbdefb; &:hover { color: #fff; } }
 }
 
-/* Links globally */
-a {
-  color: #0077b6;
-  &:hover {
-    color: #023e8a;
-  }
-}
+/* ============================================================
+   Misc
+   ============================================================ */
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
+html { scroll-behavior: smooth; }
+
+::selection {
+  background: #bbdefb;
+  color: #0d47a1;
 }
