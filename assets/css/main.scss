@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6,
     &:hover { color: #0d47a1; text-decoration: underline; }
   }
 
-  /* Remove default h3 styling, add our own */
+  /* Section headers */
   h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -191,21 +191,11 @@ h1, h2, h3, h4, h5, h6,
     color: #1a237e;
     margin-top: 2em;
     margin-bottom: 0.8em;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+    padding-bottom: 0.35em;
+    border-bottom: 2px solid #e3edf7;
 
-    /* remove inline span color */
+    /* remove inline span colors from old markdown */
     span { color: inherit !important; font-weight: inherit !important; }
-
-    &::after {
-      content: '';
-      flex: 1;
-      height: 2px;
-      background: linear-gradient(90deg, #1565c0 0%, transparent 100%);
-      border-radius: 2px;
-      margin-left: 0.5em;
-    }
   }
 }
 
@@ -214,17 +204,10 @@ h1, h2, h3, h4, h5, h6,
    ============================================================ */
 
 .section-bio {
-  background: linear-gradient(135deg, #e8f1fd 0%, #f0f7ff 60%, #ffffff 100%);
-  border: 1px solid #c5daf7;
-  border-radius: 10px;
-  padding: 1.4em 1.6em;
+  background: none;
+  border: none;
+  padding: 0;
   margin-bottom: 1.8em;
-
-  h3::before {
-    content: "○";
-    color: #1565c0;
-    font-size: 0.7em;
-  }
 }
 
 /* ============================================================
@@ -232,34 +215,21 @@ h1, h2, h3, h4, h5, h6,
    ============================================================ */
 
 .section-experience {
-  h3::before {
-    content: "◈";
-    color: #2e7d32;
-    font-size: 0.8em;
-  }
-
-  h3 {
-    color: #1b5e20;
-    &::after {
-      background: linear-gradient(90deg, #43a047 0%, transparent 100%);
-    }
-  }
-
   blockquote {
-    background: #f1f8f1;
-    border: 1px solid #c8e6c9;
-    border-left: 5px solid #43a047;
-    border-radius: 0 10px 10px 0;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #1565c0;
+    border-radius: 0 8px 8px 0;
     padding: 1em 1.4em;
     margin: 0.8em 0 1.2em 0;
     font-style: normal;
-    box-shadow: 0 2px 8px rgba(67, 160, 71, 0.08);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 
     p {
       margin: 0 0 0.4em 0;
       font-weight: 700;
       font-size: 0.95em;
-      color: #1b5e20;
+      color: #1a237e;
     }
 
     ul {
@@ -277,59 +247,22 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ============================================================
-   Recent News — timeline
+   Recent News — clean list, no timeline
    ============================================================ */
 
 .section-news {
-  h3::before {
-    content: "◆";
-    color: #e65100;
-    font-size: 0.6em;
-  }
-
-  h3 {
-    color: #bf360c;
-    &::after {
-      background: linear-gradient(90deg, #e65100 0%, transparent 100%);
-    }
-  }
-
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    border-left: 3px solid #bbdefb;
-    padding-left: 1.4em;
 
     li {
-      position: relative;
-      padding: 0.5em 0.8em;
-      margin-bottom: 0.5em;
+      padding: 0.45em 0;
       font-size: 0.9em;
       color: #37474f;
-      background: #fafcff;
-      border-radius: 0 8px 8px 0;
-      border: 1px solid #e8f1fd;
-      transition: all 0.2s ease;
+      border-bottom: 1px solid #f0f0f0;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: -1.65em;
-        top: 0.9em;
-        width: 10px;
-        height: 10px;
-        background: #1565c0;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        box-shadow: 0 0 0 2px #90caf9;
-      }
-
-      &:hover {
-        background: #e8f1fd;
-        border-color: #bbdefb;
-        transform: translateX(3px);
-      }
+      &:last-child { border-bottom: none; }
 
       strong { color: #1565c0; }
     }
