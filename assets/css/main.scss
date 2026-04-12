@@ -47,16 +47,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
 }
 
-/* Links: blue box-shadow underline, no color change */
+/* Links: #0076df blue, same as baoshenguo.com */
 a {
-  color: currentColor;
+  color: #0076df;
   text-decoration: none;
-  box-shadow: 0 2px 0 var(--darkcolor);
+  box-shadow: none;
 
   &:hover {
-    color: var(--darkcolor);
-    text-decoration: none;
-    box-shadow: 0 2px 0 var(--darkcolor);
+    color: #0076df;
+    text-decoration: underline;
   }
 }
 
@@ -193,8 +192,8 @@ html { scroll-behavior: smooth; }
   }
 
   a {
-    color: currentColor;
-    box-shadow: 0 2px 0 var(--darkcolor);
+    color: #0076df;
+    
     &:hover { color: var(--darkcolor); }
   }
 
@@ -262,8 +261,8 @@ html { scroll-behavior: smooth; }
     }
 
     a {
-      color: currentColor;
-      box-shadow: 0 2px 0 var(--darkcolor);
+      color: #0076df;
+      
     }
   }
 }
@@ -365,8 +364,8 @@ html { scroll-behavior: smooth; }
   color: var(--primary);
 
   a {
-    color: currentColor;
-    box-shadow: 0 2px 0 var(--darkcolor);
+    color: #0076df;
+    
     &:hover { color: var(--darkcolor); }
   }
 }
