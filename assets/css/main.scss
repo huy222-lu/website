@@ -8,45 +8,53 @@
 @import "minimal-mistakes";
 
 /* ============================================================
-   Global typography & base
+   Global
    ============================================================ */
 
 body {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 16px;
-  background-color: #f5f8fc;
+  background-color: #ffffff;
   color: #2c2c2c;
 }
 
-h1, h2, h3, h4, h5, h6,
-.site-title,
-.author__name {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  color: #1565c0;
+  &:hover { color: #0d47a1; text-decoration: underline; }
+}
+
+html { scroll-behavior: smooth; }
+
+::selection { background: #bbdefb; color: #0d47a1; }
+
 /* ============================================================
-   Masthead — deep blue bar (completely different from original)
+   Masthead — light gray
    ============================================================ */
 
 .masthead {
-  background: #f0f0f0;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  background: #f7f7f7;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: none;
 
   &__inner-wrap {
     padding-top: 0.6em;
     padding-bottom: 0.6em;
+    max-width: 780px;
+    margin: 0 auto;
   }
 }
 
 .site-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1em;
-  color: #333333 !important;
-  letter-spacing: 0.03em;
+  font-size: 0.95em;
+  color: #222 !important;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-
   &:hover { color: #1565c0 !important; }
 }
 
@@ -55,242 +63,211 @@ h1, h2, h3, h4, h5, h6,
 
   a {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 0.85em;
+    font-size: 0.88em;
     font-weight: 600;
-    color: #444444;
-    letter-spacing: 0.02em;
-
+    color: #444;
     &:hover { color: #1565c0; }
   }
 
-  .visible-links a::before {
-    background: #1565c0;
-  }
+  .visible-links a::before { background: #1565c0; }
 
-  button {
-    color: #555;
-    &:hover { color: #1565c0; }
-  }
+  button { color: #555; &:hover { color: #1565c0; } }
 }
 
 /* ============================================================
-   Main layout background
+   Homepage — single column centered layout
    ============================================================ */
 
-#main {
-  background-color: #f5f8fc;
+.academic-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5em 1.5em 4em;
 }
 
-/* ============================================================
-   Sidebar — card style, square photo
-   ============================================================ */
-
-.sidebar {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(21, 101, 192, 0.1);
-  padding: 1.6em 1.2em !important;
-  margin-top: 1.5em;
-}
-
-/* Square photo — no circle */
-.author__avatar {
+/* Profile section */
+.academic-profile {
   text-align: center;
+  padding: 2em 0 2.2em;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 2em;
+}
+
+.academic-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #dce8f7;
+  box-shadow: 0 2px 12px rgba(21, 101, 192, 0.12);
   margin-bottom: 1em;
-
-  img {
-    border-radius: 10px !important;
-    border: 3px solid #1565c0 !important;
-    box-shadow: 0 4px 14px rgba(21, 101, 192, 0.2) !important;
-    width: 120px !important;
-    height: 120px !important;
-    object-fit: cover;
-  }
 }
 
-.author__content {
-  text-align: center;
-  margin-bottom: 0.8em;
-}
-
-.author__name {
+.academic-name {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 1.05em !important;
-  color: #1a237e !important;
-  margin-bottom: 0.3em;
-
-  a { color: inherit !important; }
+  font-weight: 800;
+  font-size: 1.9em;
+  color: #1a237e;
+  margin: 0 0 0.2em;
+  letter-spacing: 0.02em;
 }
 
-.author__bio {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.85em !important;
-  color: #546e7a !important;
-  line-height: 1.5;
+.academic-bio {
+  font-size: 0.95em;
+  color: #555;
+  margin: 0 0 1em;
 }
 
-/* Hide the "Follow" button — very MM-specific */
-.author__urls-wrapper .btn--inverse {
-  display: none !important;
-}
-
-.author__urls {
-  display: block !important;
-  padding: 0;
-  border-top: 1px solid #e3edf7;
-  padding-top: 0.8em;
-  margin-top: 0.8em;
-
-  li {
-    border-bottom: none !important;
-    padding: 0.25em 0 !important;
-  }
+.academic-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
 
   a {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 0.83em;
+    display: inline-block;
+    font-size: 0.82em;
     font-weight: 600;
-    color: #1565c0 !important;
+    color: #1565c0;
+    border: 1px solid #b3d4f7;
+    border-radius: 20px;
+    padding: 0.25em 0.9em;
+    text-decoration: none;
+    background: #f0f7ff;
+    transition: all 0.2s;
 
     &:hover {
-      color: #0d47a1 !important;
-      text-decoration: underline;
+      background: #1565c0;
+      color: #fff;
+      border-color: #1565c0;
+      text-decoration: none;
     }
   }
 }
 
-/* ============================================================
-   Page content area
-   ============================================================ */
-
-.page {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(21, 101, 192, 0.08);
-  padding: 2em 2.4em !important;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
-}
-
-.page__content {
-  font-family: 'Source Sans 3', sans-serif;
+/* Content sections */
+.academic-content {
   font-size: 0.95em;
-  line-height: 1.75;
+  line-height: 1.8;
   color: #2c2c2c;
 
-  a {
-    color: #1565c0;
-    &:hover { color: #0d47a1; text-decoration: underline; }
-  }
-
-  /* Section headers */
   h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.05em;
     color: #1a237e;
-    margin-top: 1.8em;
+    margin-top: 2em;
     margin-bottom: 0.6em;
     padding-bottom: 0.3em;
-    border-bottom: 2px solid #e3edf7;
-
-    /* remove inline span colors from old markdown */
+    border-bottom: 1px solid #e0e0e0;
     span { color: inherit !important; font-weight: inherit !important; }
   }
+
+  a { color: #1565c0; &:hover { color: #0d47a1; } }
+
+  p { margin-bottom: 0.8em; }
 }
 
-/* ============================================================
-   Biography section
-   ============================================================ */
-
+/* Biography — no background */
 .section-bio {
   background: none;
   border: none;
   padding: 0;
-  margin-bottom: 1.8em;
+  margin-bottom: 0.5em;
 }
 
-/* ============================================================
-   Research Experience — card entries
-   ============================================================ */
+/* Research Experience cards */
+.section-experience blockquote {
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-left: 3px solid #1565c0;
+  border-radius: 0 6px 6px 0;
+  padding: 0.8em 1.2em;
+  margin: 0.6em 0 1em;
+  font-style: normal;
 
-.section-experience {
-  blockquote {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-left: 4px solid #1565c0;
-    border-radius: 0 8px 8px 0;
-    padding: 1em 1.4em;
-    margin: 0.8em 0 1.2em 0;
-    font-style: normal;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-
-    p {
-      margin: 0 0 0.4em 0;
-      font-weight: 700;
-      font-size: 0.95em;
-      color: #1a237e;
-    }
-
-    ul {
-      margin: 0.3em 0 0 0;
-      padding-left: 1.2em;
-
-      li {
-        font-size: 0.88em;
-        color: #37474f;
-        margin-bottom: 0.2em;
-        list-style-type: disc;
-      }
-    }
+  p {
+    margin: 0 0 0.3em;
+    font-weight: 700;
+    font-size: 0.92em;
+    color: #1a237e;
   }
-}
 
-/* ============================================================
-   Recent News — clean list, no timeline
-   ============================================================ */
-
-.section-news {
   ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
+    margin: 0.2em 0 0;
+    padding-left: 1.2em;
     li {
-      padding: 0.45em 0;
-      font-size: 0.9em;
-      color: #37474f;
-      border-bottom: 1px solid #f0f0f0;
-
-      &:last-child { border-bottom: none; }
-
-      strong { color: #1565c0; }
+      font-size: 0.88em;
+      color: #444;
+      margin-bottom: 0.15em;
+      list-style-type: disc;
     }
   }
 }
 
-/* ============================================================
-   Publications page
-   ============================================================ */
+/* Recent News — simple clean list */
+.section-news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-.page__content h3 {
-  /* year headings */
+  li {
+    padding: 0.4em 0;
+    font-size: 0.9em;
+    color: #444;
+    border-bottom: 1px solid #f0f0f0;
+    &:last-child { border-bottom: none; }
+    strong { color: #1565c0; }
+  }
 }
 
-/* Venue badge e.g. [ICRA'26] */
-.page__content strong {
-  display: inline-block;
-  background: #e3f0ff;
-  color: #1565c0;
-  font-size: 0.82em;
-  font-weight: 700;
-  padding: 0.1em 0.6em;
-  border-radius: 5px;
-  border: 1px solid #b3d4f7;
-  margin-right: 0.3em;
+/* ============================================================
+   Sub-pages (Publications, etc.) — keep sidebar-free, centered
+   ============================================================ */
+
+.layout--single #main {
+  max-width: 760px;
+  margin: 0 auto;
+  float: none;
+  padding: 2em 1.5em;
+}
+
+.layout--single .sidebar { display: none; }
+
+.page__content {
+  font-size: 0.95em;
+  line-height: 1.8;
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.05em;
+    color: #1a237e;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  /* Venue badge e.g. [ICRA'26] */
+  strong {
+    display: inline-block;
+    background: #f0f7ff;
+    color: #1565c0;
+    font-size: 0.82em;
+    font-weight: 700;
+    padding: 0.1em 0.55em;
+    border-radius: 4px;
+    border: 1px solid #cde0f7;
+    margin-right: 0.3em;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+.page__title {
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.02em;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #1a237e;
 }
 
 /* ============================================================
@@ -298,34 +275,11 @@ h1, h2, h3, h4, h5, h6,
    ============================================================ */
 
 .page__footer {
-  background: linear-gradient(90deg, #1a237e 0%, #1565c0 100%);
-  color: #fff;
+  background: #f7f7f7;
+  border-top: 1px solid #e0e0e0;
+  color: #777;
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.82em;
-  margin-top: 2em;
+  font-size: 0.8em;
 
-  a { color: #90caf9; &:hover { color: #fff; } }
-
-  &-copyright { color: rgba(255,255,255,0.75); }
-}
-
-/* ============================================================
-   Misc polish
-   ============================================================ */
-
-html { scroll-behavior: smooth; }
-
-::selection {
-  background: #bbdefb;
-  color: #0d47a1;
-}
-
-/* Page title (for sub-pages like Publications) */
-.page__title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  color: #1a237e;
-  border-bottom: 3px solid #1565c0;
-  padding-bottom: 0.3em;
-  display: inline-block;
+  a { color: #1565c0; &:hover { color: #0d47a1; } }
 }

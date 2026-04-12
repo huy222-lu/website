@@ -1,7 +1,5 @@
 ---
-layout: single
-classes: wide
-author_profile: true
+layout: academic
 ---
 
 <div class="section-bio" markdown="1">
