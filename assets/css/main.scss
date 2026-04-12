@@ -8,268 +8,331 @@
 @import "minimal-mistakes";
 
 /* ============================================================
-   Global typography
+   Global typography & base
    ============================================================ */
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
-  color: #2d2d2d;
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: #f5f8fc;
+  color: #2c2c2c;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Serif Display', serif;
-  letter-spacing: 0.01em;
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.author__name {
+  font-family: 'Raleway', sans-serif;
 }
 
 /* ============================================================
-   Masthead (top nav)
+   Masthead — deep blue bar (completely different from original)
    ============================================================ */
 
 .masthead {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e4eaf0;
-  box-shadow: 0 1px 6px rgba(0, 100, 180, 0.07);
+  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+  border-bottom: none;
+  box-shadow: 0 2px 10px rgba(21, 101, 192, 0.3);
 
   &__inner-wrap {
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
   }
 }
 
 .site-title {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.3em;
-  color: #1565c0 !important;
-  letter-spacing: 0.02em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: #ffffff !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &:hover { color: #bbdefb !important; }
 }
 
-.greedy-nav a {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.88em;
-  font-weight: 500;
-  color: #444;
+.greedy-nav {
+  background: transparent;
 
-  &:hover { color: #1565c0; }
+  a {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.88);
+    letter-spacing: 0.03em;
+
+    &:hover { color: #ffffff; }
+  }
+
+  .visible-links a::before {
+    background: #ffffff;
+  }
+
+  button {
+    color: #ffffff;
+    &:hover { color: #bbdefb; }
+  }
 }
 
 /* ============================================================
-   Sidebar
+   Main layout background
+   ============================================================ */
+
+#main {
+  background-color: #f5f8fc;
+}
+
+/* ============================================================
+   Sidebar — card style, square photo
    ============================================================ */
 
 .sidebar {
-  .author__name {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.3em;
-    color: #1a1a2e;
-    margin-bottom: 0.25em;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(21, 101, 192, 0.1);
+  padding: 1.6em 1.2em !important;
+  margin-top: 1.5em;
+}
+
+/* Square photo — no circle */
+.author__avatar {
+  text-align: center;
+  margin-bottom: 1em;
+
+  img {
+    border-radius: 10px !important;
+    border: 3px solid #1565c0 !important;
+    box-shadow: 0 4px 14px rgba(21, 101, 192, 0.2) !important;
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover;
+  }
+}
+
+.author__content {
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+.author__name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 1.15em !important;
+  color: #1a237e !important;
+  margin-bottom: 0.3em;
+
+  a { color: inherit !important; }
+}
+
+.author__bio {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.82em !important;
+  color: #546e7a !important;
+  line-height: 1.5;
+}
+
+/* Hide the "Follow" button — very MM-specific */
+.author__urls-wrapper .btn--inverse {
+  display: none !important;
+}
+
+.author__urls {
+  display: block !important;
+  padding: 0;
+  border-top: 1px solid #e3edf7;
+  padding-top: 0.8em;
+  margin-top: 0.8em;
+
+  li {
+    border-bottom: none !important;
+    padding: 0.25em 0 !important;
   }
 
-  .author__bio {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.82em;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  .author__avatar img {
-    border-radius: 50%;
-    border: 3px solid #bbdefb;
-    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.15);
-  }
-
-  .author__urls a {
-    font-family: 'Inter', sans-serif;
+  a {
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 0.83em;
-    color: #1565c0;
-    &:hover { color: #0d47a1; text-decoration: underline; }
+    font-weight: 600;
+    color: #1565c0 !important;
+
+    &:hover {
+      color: #0d47a1 !important;
+      text-decoration: underline;
+    }
   }
 }
 
 /* ============================================================
-   Page content — shared
+   Page content area
    ============================================================ */
 
+.page {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(21, 101, 192, 0.08);
+  padding: 2em 2.4em !important;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
 .page__content {
-  font-size: 0.94em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1em;
   line-height: 1.8;
-  color: #333;
+  color: #2c2c2c;
 
   a {
     color: #1565c0;
     &:hover { color: #0d47a1; text-decoration: underline; }
   }
+
+  /* Remove default h3 styling, add our own */
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #1a237e;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    /* remove inline span color */
+    span { color: inherit !important; font-weight: inherit !important; }
+
+    &::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(90deg, #1565c0 0%, transparent 100%);
+      border-radius: 2px;
+      margin-left: 0.5em;
+    }
+  }
 }
 
 /* ============================================================
-   Section headers (h3) — each gets its own look
-   ============================================================ */
-
-/* Default h3 style */
-.page__content h3 {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.25em;
-  color: #1a1a2e;
-  margin-top: 2.2em;
-  margin-bottom: 0.8em;
-  padding-bottom: 0.4em;
-  border-bottom: 2px solid #e3edf7;
-  /* remove any inline color from span children */
-  span { color: inherit !important; font-weight: inherit !important; }
-}
-
-/* Biography — blue pill label */
-.section-bio h3::before {
-  content: "About";
-  display: inline-block;
-  background: #1565c0;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.6em;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.15em 0.7em;
-  border-radius: 20px;
-  margin-right: 0.7em;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
-}
-
-/* Research Experiences — green accent */
-.section-experience h3 {
-  border-bottom-color: #a5d6a7;
-  span { color: #2e7d32 !important; }
-}
-
-.section-experience h3::before {
-  content: "Exp";
-  display: inline-block;
-  background: #2e7d32;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.6em;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.15em 0.7em;
-  border-radius: 20px;
-  margin-right: 0.7em;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
-}
-
-/* Recent News — orange/amber accent */
-.section-news h3 {
-  border-bottom-color: #ffcc80;
-  span { color: #e65100 !important; }
-}
-
-.section-news h3::before {
-  content: "News";
-  display: inline-block;
-  background: #e65100;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.6em;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.15em 0.7em;
-  border-radius: 20px;
-  margin-right: 0.7em;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
-}
-
-/* ============================================================
-   Biography block
+   Biography section
    ============================================================ */
 
 .section-bio {
-  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
-  border: 1px solid #ddeeff;
+  background: linear-gradient(135deg, #e8f1fd 0%, #f0f7ff 60%, #ffffff 100%);
+  border: 1px solid #c5daf7;
   border-radius: 10px;
   padding: 1.4em 1.6em;
   margin-bottom: 1.8em;
+
+  h3::before {
+    content: "○";
+    color: #1565c0;
+    font-size: 0.7em;
+  }
 }
 
 /* ============================================================
-   Research Experience cards (blockquotes)
+   Research Experience — card entries
    ============================================================ */
 
-.section-experience blockquote {
-  background: #f9fffe;
-  border: 1px solid #c8e6c9;
-  border-left: 5px solid #43a047;
-  border-radius: 0 8px 8px 0;
-  padding: 0.9em 1.2em;
-  margin: 0.8em 0 1.2em 0;
-  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.07);
-  font-style: normal;
+.section-experience {
+  h3::before {
+    content: "◈";
+    color: #2e7d32;
+    font-size: 0.8em;
+  }
 
-  p {
-    margin: 0 0 0.4em 0;
-    font-weight: 600;
+  h3 {
     color: #1b5e20;
-    font-size: 0.95em;
+    &::after {
+      background: linear-gradient(90deg, #43a047 0%, transparent 100%);
+    }
+  }
+
+  blockquote {
+    background: #f1f8f1;
+    border: 1px solid #c8e6c9;
+    border-left: 5px solid #43a047;
+    border-radius: 0 10px 10px 0;
+    padding: 1em 1.4em;
+    margin: 0.8em 0 1.2em 0;
+    font-style: normal;
+    box-shadow: 0 2px 8px rgba(67, 160, 71, 0.08);
+
+    p {
+      margin: 0 0 0.4em 0;
+      font-weight: 700;
+      font-size: 0.95em;
+      color: #1b5e20;
+    }
+
+    ul {
+      margin: 0.3em 0 0 0;
+      padding-left: 1.2em;
+
+      li {
+        font-size: 0.88em;
+        color: #37474f;
+        margin-bottom: 0.2em;
+        list-style-type: disc;
+      }
+    }
+  }
+}
+
+/* ============================================================
+   Recent News — timeline
+   ============================================================ */
+
+.section-news {
+  h3::before {
+    content: "◆";
+    color: #e65100;
+    font-size: 0.6em;
+  }
+
+  h3 {
+    color: #bf360c;
+    &::after {
+      background: linear-gradient(90deg, #e65100 0%, transparent 100%);
+    }
   }
 
   ul {
-    margin: 0.3em 0 0 0;
-    padding-left: 1.3em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 3px solid #bbdefb;
+    padding-left: 1.4em;
+
     li {
-      font-size: 0.88em;
+      position: relative;
+      padding: 0.5em 0.8em;
+      margin-bottom: 0.5em;
+      font-size: 0.9em;
       color: #37474f;
-      margin-bottom: 0.25em;
-      list-style-type: disc;
+      background: #fafcff;
+      border-radius: 0 8px 8px 0;
+      border: 1px solid #e8f1fd;
+      transition: all 0.2s ease;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -1.65em;
+        top: 0.9em;
+        width: 10px;
+        height: 10px;
+        background: #1565c0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px #90caf9;
+      }
+
+      &:hover {
+        background: #e8f1fd;
+        border-color: #bbdefb;
+        transform: translateX(3px);
+      }
+
+      strong { color: #1565c0; }
     }
-  }
-}
-
-/* ============================================================
-   Recent News — timeline style
-   ============================================================ */
-
-.section-news ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-left: 2px solid #bbdefb;
-  padding-left: 1.4em;
-
-  li {
-    position: relative;
-    padding: 0.45em 0.5em 0.45em 0.6em;
-    margin-bottom: 0.5em;
-    font-size: 0.88em;
-    color: #37474f;
-    background: #fafcff;
-    border-radius: 0 6px 6px 0;
-    transition: background 0.2s;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: -1.55em;
-      top: 0.85em;
-      width: 9px;
-      height: 9px;
-      background: #1565c0;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 0 2px #90caf9;
-    }
-
-    &:hover {
-      background: #e8f1fd;
-    }
-
-    /* Bold the date part (e.g. "May. 2025:") */
-    strong { color: #1565c0; }
   }
 }
 
@@ -278,13 +341,7 @@ h1, h2, h3, h4, h5, h6 {
    ============================================================ */
 
 .page__content h3 {
-  /* year headings on publications page */
-}
-
-/* Year labels */
-.page__content > h3:not(.section-bio h3):not(.section-experience h3):not(.section-news h3) {
-  font-size: 1.4em;
-  color: #1565c0;
+  /* year headings */
 }
 
 /* Venue badge e.g. [ICRA'26] */
@@ -293,11 +350,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #e3f0ff;
   color: #1565c0;
   font-size: 0.82em;
-  font-weight: 600;
-  padding: 0.1em 0.55em;
-  border-radius: 4px;
+  font-weight: 700;
+  padding: 0.1em 0.6em;
+  border-radius: 5px;
   border: 1px solid #b3d4f7;
   margin-right: 0.3em;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.02em;
 }
 
 /* ============================================================
@@ -305,16 +364,19 @@ h1, h2, h3, h4, h5, h6 {
    ============================================================ */
 
 .page__footer {
-  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+  background: linear-gradient(90deg, #1a237e 0%, #1565c0 100%);
   color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.8em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.82em;
+  margin-top: 2em;
 
-  a { color: #bbdefb; &:hover { color: #fff; } }
+  a { color: #90caf9; &:hover { color: #fff; } }
+
+  &-copyright { color: rgba(255,255,255,0.75); }
 }
 
 /* ============================================================
-   Misc
+   Misc polish
    ============================================================ */
 
 html { scroll-behavior: smooth; }
@@ -322,4 +384,14 @@ html { scroll-behavior: smooth; }
 ::selection {
   background: #bbdefb;
   color: #0d47a1;
+}
+
+/* Page title (for sub-pages like Publications) */
+.page__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #1a237e;
+  border-bottom: 3px solid #1565c0;
+  padding-bottom: 0.3em;
+  display: inline-block;
 }
