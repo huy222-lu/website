@@ -1,7 +1,6 @@
 ---
 title: "Selected Publications"
 layout: single
-classes: wide
 permalink: /publications/
 author_profile: false
 ---

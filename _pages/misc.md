@@ -2,7 +2,6 @@
 title: "Misc"
 permalink: /misc/
 layout: single
-classes: wide
 author_profile: true
 ---
 

@@ -2,7 +2,6 @@
 title: "Personal"
 permalink: /personal/
 layout: single
-classes: wide
 ---
 
 ## Education	
