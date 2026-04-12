@@ -62,14 +62,14 @@ author:
       url: "https://scholar.google.com/citations?user=K-OCWVMAAAAJ&hl=en"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/wenjun-lyu-992a50175/"
+      url: "https://www.linkedin.com/in/hua-yan-085489221/"
 footer:
   links:
     - label: "Google Scholar"
       url: "https://scholar.google.com/citations?user=K-OCWVMAAAAJ&hl=en"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/wenjun-lyu-992a50175/"
+      url: https://www.linkedin.com/in/hua-yan-085489221/"
 
 defaults:
   # _posts
