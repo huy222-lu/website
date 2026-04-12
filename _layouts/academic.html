@@ -4,20 +4,23 @@ layout: default
 
 <div class="academic-wrapper">
 
-  <!-- Profile hero -->
-  <div class="academic-profile">
+  <!-- Intro: photo floats right, name+bio on left -->
+  <div class="academic-intro">
     {% if site.author.avatar %}
-      <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="academic-avatar">
+      <div class="academic-avatar-wrap">
+        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="academic-avatar">
+        <div class="academic-links">
+          {% for link in site.author.links %}
+            {% if link.label and link.url %}
+              <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
     {% endif %}
+
     <h1 class="academic-name">{{ site.author.name }}</h1>
     <p class="academic-bio">{{ site.author.bio }}</p>
-    <div class="academic-links">
-      {% for link in site.author.links %}
-        {% if link.label and link.url %}
-          <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
   </div>
 
   <!-- Page content -->
