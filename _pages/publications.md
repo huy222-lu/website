@@ -1,8 +1,7 @@
 ---
 title: "Selected Publications"
-layout: single
+layout: page
 permalink: /publications/
-author_profile: false
 ---
 
 <div class="pub-list">

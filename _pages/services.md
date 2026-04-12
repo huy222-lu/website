@@ -1,6 +1,6 @@
 ---
 title: "Awards and Services"
-permalink: /Services/
+layout: pagepermalink: /Services/
 author_profile: false
 ---
 ## Awards

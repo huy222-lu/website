@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-layout: single
+layout: page
 permalink: /resource/
 author_profile: false
 ---
