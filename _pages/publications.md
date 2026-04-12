@@ -9,15 +9,6 @@ permalink: /publications/
 <h2 class="pub-year">2026</h2>
 
 <div class="pub-item">
-  <div class="pub-badge">IMWUT '26</div>
-  <div class="pub-details">
-    <div class="pub-title">Large Language Model-guided Semantic Alignment for Human Activity Recognition</div>
-    <div class="pub-authors"><u>Hua Yan</u>, Heng Tan, Yi Ding, Pengfei Zhou, Vinod Namboodiri, Yu Yang</div>
-    <div class="pub-venue">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2026</div>
-  </div>
-</div>
-
-<div class="pub-item">
   <div class="pub-badge">ICRA '26</div>
   <div class="pub-details">
     <div class="pub-title">Bridging Policy and Real-World Dynamics: LLM-Augmented Rebalancing for Shared Micromobility Systems</div>
@@ -42,7 +33,24 @@ permalink: /publications/
   </div>
 </div>
 
+<div class="pub-item">
+  <div class="pub-badge under-review">Under Review</div>
+  <div class="pub-details">
+    <div class="pub-title">Guiding LLM-Based Human Mobility Simulation with Mobility Measures from Shared Data</div>
+    <div class="pub-authors"><u>Hua Yan</u>, Heng Tan, Yu Yang</div>
+  </div>
+</div>
+
 <h2 class="pub-year">2025</h2>
+
+<div class="pub-item">
+  <div class="pub-badge">IMWUT '25</div>
+  <div class="pub-details">
+    <div class="pub-title">Large Language Model-guided Semantic Alignment for Human Activity Recognition</div>
+    <div class="pub-authors"><u>Hua Yan</u>, Heng Tan, Yi Ding, Pengfei Zhou, Vinod Namboodiri, Yu Yang</div>
+    <div class="pub-venue">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2026</div>
+  </div>
+</div>
 
 <div class="pub-item">
   <div class="pub-badge">BuildSys '25</div>
@@ -94,7 +102,7 @@ permalink: /publications/
 <h2 class="pub-year">2023</h2>
 
 <div class="pub-item">
-  <div class="pub-badge">ICA3PP '23</div>
+  <div class="pub-badge">CCF TPCI</div>
   <div class="pub-details">
     <div class="pub-title">Large-Scale Trajectory Prediction via Relationship-Aware Adaptive Hierarchical Graph Learning</div>
     <div class="pub-authors"><u>Hua Yan</u>, Yu Yang</div>
