@@ -6,7 +6,7 @@ layout: academic
 
 ### Biography
 
-I am a fourth-year Ph.D. student at Rutgers University, under the supervision of Prof. [Desheng Zhang](https://www.cs.rutgers.edu/~dz220/). I obtained my master degree from Southeast University, under the supervision of Prof. [Shuai Wang](https://cse.seu.edu.cn/2019/0107/c23024a257643/page.htm).
+I am a fourth-year Ph.D. student at Rutgers University, under the supervision of Prof. [Desheng Zhang](https://www.cs.rutgers.edu/~dz220/). I obtained my master degree from Southeast University, under the supervision of Prof. [Shuai Wang](https://cse.seu.edu.cn/2019/0107/c23024a257643/page.htm) and Prof. [Tian He](https://cse.seu.edu.cn/2019/0107/c23024a257643/page.htm) .
 
 My research is concentrated in the areas of **Human-Centric Cyber-Physical Systems** and **Spatial-Temporal Data Science**.
 I focus on exploring various techniques, e.g., Large Language Models (LLMs), Robust Machine Learning, and Interpretable Large-scale System Optimization, for predictive analytics and decision-making problems in smart cities.
@@ -19,13 +19,15 @@ My publications can also be found at [Google Scholar](https://scholar.google.com
 
 ### Research Experiences
 
-> **Research Intern in JD Logistics &nbsp;&nbsp;&nbsp; Summer 2021**
-> * Led a fair courier workload measurement project, which has been **deployed nationwide**
+> **Research Intern in JD Logistics &nbsp;&nbsp;&nbsp; Summer 2022, Summer 2023**
+> * Led the logistics audience expansion project and deployed the framework in production on the JD e-commerce platform
+> * Led the courier route planning project to improve user experience and enhance courier operational efficiency
 
-> **Research Intern in JD Logistics &nbsp;&nbsp;&nbsp; Summer 2024**
-> * Led a heterogeneous task assignment system to optimize courier efficiency in conducting various tasks
-> * Led a heterogeneous worker scheduling project to optimize courier and sales cooperation
-> * Led nationwide order carbon footprint measurement to quantify the environmental impact of logistics
+
+> **Research Intern in Alibaba Group, Local Services Business Unit &nbsp;&nbsp;&nbsp; Aug 2020 – Mar 2021**
+> * Led the fast origin–destination distance query project, designing a framework enabling efficient queries and reducing storage
+overhead for on-demand delivery during rush hours
+> *  Led a store site recommendation project that models both supply and demand aspects via multi-graph attention networks
 
 </div>
 
