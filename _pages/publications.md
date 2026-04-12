@@ -1,5 +1,5 @@
 ---
-title: "Selected Publications"
+title: "Publications"
 layout: page
 permalink: /publications/
 ---
