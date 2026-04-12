@@ -8,9 +8,8 @@ layout: academic
 
 I am a fourth-year Ph.D. student at Lehigh University, under the supervision of Prof. [Yu Yang](https://www.cs.rutgers.edu/~dz220/). I obtained my master degree from Southeast University, under the supervision of Prof. [Shuai Wang](https://cse.seu.edu.cn/2019/0107/c23024a257643/page.htm) and Prof. [Tian He](https://scholar.google.com/citations?user=hc1m_BQAAAAJ&hl=en) .
 
-My research is concentrated in the areas of **Human-Centric Cyber-Physical Systems** and **Spatial-Temporal Data Science**.
-I focus on exploring various techniques, e.g., Large Language Models (LLMs), Robust Machine Learning, and Interpretable Large-scale System Optimization, for predictive analytics and decision-making problems in smart cities.
-My work is informed by real-world demands and the systems I developed have been deployed **nationwide** to improve urban life and promote environmental sustainability.
+My research is concentrated in the areas of **Human-Centric Cyber-Physical Systems** and **AI-driven simulation**.
+My research focuses on modeling human behavior and optimizing mobility systems, with applications in logistics, multimodal transportation networks, and shared micromobility. More recently, I am interested in combining large language models with simulation to develop synthetic populations with realistic mobility behaviors for urban mobility applications.
 My publications can also be found at [Google Scholar](https://scholar.google.com/citations?user=K-OCWVMAAAAJ&hl=en).
 
 </div>
