@@ -36,8 +36,8 @@ permalink: /publications/
 <div class="pub-item">
   <div class="pub-badge under-review">Under Review</div>
   <div class="pub-details">
-    <div class="pub-title">Guiding LLM-Based Human Mobility Simulation with Mobility Measures from Shared Data</div>
-    <div class="pub-authors"><u>Hua Yan</u>, Heng Tan, Yu Yang</div>
+    <div class="pub-title">LLM-guided reinforcement learning: Addressing training bottlenecks through policy modulation</div>
+    <div class="pub-authors">Heng Tan, <u>Hua Yan</u>, Yu Yang</div>
   </div>
 </div>
 
