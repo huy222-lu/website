@@ -1,7 +1,7 @@
 ---
 title: "Awards and Services"
 permalink: /Services/
-author_profile: true
+author_profile: false
 ---
 ## Awards
 

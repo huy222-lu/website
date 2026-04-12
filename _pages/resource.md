@@ -3,7 +3,7 @@ title: "Resources"
 layout: single
 classes: wide
 permalink: /resource/
-author_profile: true
+author_profile: false
 ---
 
 ### Useful Links 

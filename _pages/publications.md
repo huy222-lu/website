@@ -3,6 +3,7 @@ title: "Selected Publications"
 layout: single
 classes: wide
 permalink: /publications/
+author_profile: false
 ---
 
 <div class="pub-list">
