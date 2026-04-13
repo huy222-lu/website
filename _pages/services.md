@@ -3,7 +3,7 @@ layout: page
 permalink: /Services/
 author_profile: false
 ---
-<h2 style="font-weight:700;">Awards</h2>
+<h3 style="font-weight:700;">Awards</h3>
 
 
 * Lehigh Presidential Fellowship, 2022
@@ -13,10 +13,10 @@ author_profile: false
 * National Scholarship, China, 2019-2020
 
 
-### **Program Committee Member**
+<h3 style="font-weight:700;">Program Committee Member</h3>
 * SpatialConnect Workshop, ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2025.
 
-### **Reviewer**
+<h3 style="font-weight:700;">Reviewer</h3>
 * KDD 2026
 * IMWUT 2026
 * IMWUT 2025.
