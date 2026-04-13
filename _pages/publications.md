@@ -75,7 +75,7 @@ permalink: /publications/
   <div class="pub-details">
     <div class="pub-title">Spatially Aware Mixture of Propagation for Air Quality Prediction</div>
     <div class="pub-authors">Xiyang Hu, <u>Hua Yan</u>, Yu Yang</div>
-    <div class="pub-venue">ACM SIGSPATIAL Workshop on Smart Infrastructure and Smart Cities for Sustainability, 2025</div>
+    <div class="pub-venue">ACM SIGSPATIAL International Workshop on Spatial Intelligence for Smart and Connected Communities, 2025</div>
   </div>
 </div>
 
