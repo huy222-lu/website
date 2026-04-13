@@ -3,7 +3,8 @@ layout: page
 permalink: /Services/
 author_profile: false
 ---
-## **Awards**
+<h2 style="font-weight:700;">Awards</h2>
+
 
 * Lehigh Presidential Fellowship, 2022
 * Web Conference NSF Travel Grants, 2024
