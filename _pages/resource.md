@@ -4,7 +4,7 @@ permalink: /resource/
 author_profile: false
 ---
 
-### **Useful Links** 
+<h3 style="font-weight:700;">Useful Links</h3>
 
 * [Writing Tips for Academics](https://greatresearch.org/2013/10/11/storytelling-101-writing-tips-for-academics/)
 * [ccf-deadline](https://ccfddl.github.io/)
