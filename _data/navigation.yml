@@ -1,6 +1,8 @@
 main:
   - title: "Publications"
     url: /publications/
+  - title: "Experience"
+    url: /experience/
   - title: "Award and Services"
     url: /Services/
 #  - title: "Misc"
