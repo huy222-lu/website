@@ -4,12 +4,12 @@ layout: page
 permalink: /experience/
 ---
 
-## Education
+## **Education**
 
 * **Ph.D. in Computer Science**, Lehigh University, 2022 – Present
 * **M.S. in Computer Technology**, Southeast University, 2019 – 2022
 
-## Research Experiences
+## **Research Experiences**
 
 * **Research Intern**, JD Logistics, Summer 2024
   * Led a heterogeneous task assignment system to optimize courier efficiency
