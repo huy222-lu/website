@@ -6,27 +6,22 @@ author_profile: false
 ---
 ## Awards
 
-* CS Department Rizvi Research Excellence Award of Rutgers University, 2025
-* Best Student Paper of ICA3PP, 2023
-* Distinguished Paper, IoT Committee of Chinese Electronics Institute, 2023
-* Fellowship of Rutgers University, 2021
-* KDD Student Registration Award, 2021, 2020
-* ICDCS Student Registration Award, 2021
-* Outstanding Graduates of Hunan Province, 2020 (**Top 3%**)
-* National Scholarship, 2019 (**Top 3%**)
-* Excellent Student Pacesetter, 2019 (**Top 0.1%**)
-* Outstanding Student Cadre, 2019 (**Top 5%**)
-* Best Paper Candidate of ICPP, 2019
-* Excellent League Cadre, 2019 (**Top 1%**)
-* Post-graduate Key Exploration Project, 2018 (**Top 1%**)
-* APNet Student Travel Grant, 2018
-* ICNP Student Travel Grant, 2018
+* Lehigh Presidential Fellowship, 2022
+* Web Conference NSF Travel Grants, 2024
+* CIKM Travel Grants, 2023
+* Outstanding Master’s Thesis, Jiangsu Computer Society, 2023 (Only 10 theses awarded across the province).
+* National Scholarship, China, 2019-2020
 
 
-### Reviewer and TPC
+## Reviewer and TPC
 
-* Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
-* SIGKDD 2026
+### Program Committee Member
+* SpatialConnect Workshop, ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2025.
+
+### Reviewer
+* KDD 2026
+* IMWUT 2026
+* IMWUT 2025.
 
 
 
