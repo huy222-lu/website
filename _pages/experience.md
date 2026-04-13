@@ -3,12 +3,13 @@ layout: page
 permalink: /experience/
 ---
 
-## **Education**
+<h3 style="font-weight:700;">Education</h3>
+
 
 * **Ph.D. in Computer Science**, Lehigh University, 2022 – Present
 * **M.S. in Computer Technology**, Southeast University, 2019 – 2022
 
-## **Internship Experiences**
+<h3 style="font-weight:700;">Internship Experiences</h3>
 
 <div class="section-experience" markdown="1">
 
