@@ -1,5 +1,4 @@
 ---
-title: "Awards and Services"
 layout: page
 permalink: /Services/
 author_profile: false
