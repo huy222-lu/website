@@ -1,8 +1,10 @@
 ---
-title: "Publications"
 layout: page
 permalink: /publications/
 ---
+
+<h3 style="font-weight:700;">Publications</h3>
+
 
 <div class="pub-list">
 
