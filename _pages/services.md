@@ -13,8 +13,6 @@ author_profile: false
 * National Scholarship, China, 2019-2020
 
 
-## Reviewer and TPC
-
 ### Program Committee Member
 * SpatialConnect Workshop, ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2025.
 
