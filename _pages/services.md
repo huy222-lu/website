@@ -13,11 +13,12 @@ author_profile: false
 
 
 <h3 style="font-weight:700;">Program Committee Member</h3>
-* SpatialConnect Workshop, ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2025.
+* SpatialConnect Workshop, ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2025,2026.
 
 <h3 style="font-weight:700;">Reviewer</h3>
 * ICLR,2027
 * ICRA,2027
+* WWWW,2027
 * KDD 2026,2027
 * IMWUT 2026,2025
 * SIGSPATIA,2026
