@@ -6,10 +6,9 @@ layout: academic
 
 ### Biography
 
-I am currently a fourth-year Ph.D. student at Lehigh University, advised by Prof. [Yu Yang](https://www.yyang.site/). I received my master’s degree from Southeast University, where I was advised by Prof. [Shuai Wang](https://cse.seu.edu.cn/2019/0107/c23024a257643/page.htm) and Prof. [Tian He](https://scholar.google.com/citations?user=hc1m_BQAAAAJ&hl=en) .
+I am currently a final-year Ph.D. student at Lehigh University, advised by Prof. [Yu Yang](https://www.yyang.site/). I received my master’s degree from Southeast University, where I was advised by Prof. [Shuai Wang](https://cse.seu.edu.cn/2019/0107/c23024a257643/page.htm) and Prof. [Tian He](https://scholar.google.com/citations?user=hc1m_BQAAAAJ&hl=en) .
 
-My research is concentrated in the areas of **Human-Centric Cyber-Physical Systems** and **AI-driven Simulation**.
-I focus on modeling human behavior and optimizing mobility systems, with applications in logistics, multimodal transportation networks, and shared micromobility. More recently, I am interested in using large language models to generate synthetic populations with realistic mobility behaviors for urban mobility applications.
+My research focuses on **AI for urban mobility and logistics** and **LLM-based agents for human mobility simulation**. I focus on modeling human behavior and optimizing mobility systems, with applications in logistics, multimodal transportation networks, and shared micromobility. More recently, I have become interested in using large language models to generate synthetic populations with realistic mobility behaviors.
 My publications can also be found at [Google Scholar](https://scholar.google.com/citations?user=K-OCWVMAAAAJ&hl=en).
 
 </div>
